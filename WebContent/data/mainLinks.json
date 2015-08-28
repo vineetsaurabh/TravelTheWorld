@@ -1,0 +1,40 @@
+{
+    "mainLinks":[
+        {
+            "Label":"Ticket Booking",
+            "Name":"ticketBooking"
+        },
+        {
+            "Label":"Hotel Booking",
+            "Name":"hotelBooking"
+        },
+        {
+            "Label":"Visa",
+            "Name":"visa"
+        },
+        {
+            "Label":"Tour Booking",
+            "Name":"tourBooking"
+        },
+        {
+            "Label":"Cloths",
+            "Name":"cloths"
+        },
+        {
+            "Label":"Currency",
+            "Name":"currency"
+        },
+        {
+            "Label":"Restaurant",
+            "Name":"restaurant"
+        },
+        {
+            "Label":"Airport Transfer",
+            "Name":"airportTransfer"
+        },
+        {
+            "Label":"Local Transport",
+            "Name":"localTransport"
+        }
+    ]
+}

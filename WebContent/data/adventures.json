@@ -1,0 +1,49 @@
+{
+    "adventures":[
+        {
+            "Label":"Mountain Adventures",
+            "Activities":[
+                {
+                    "Label":"Trekking"
+                },
+                {
+                    "Label":"Rock Climbing"
+                },
+                {
+                    "Label":"Skiing"
+                }
+            ]
+        },
+        {
+            "Label":"Water Adventures",
+            "Activities":[
+                {
+                    "Label":"Snorkeling"
+                },
+                {
+                    "Label":"Scuba Diving"
+                },
+                {
+                    "Label":"Surfing"
+                },
+                {
+                    "Label":"Kayaking"
+                }
+            ]
+        },
+        {
+            "Label":"Other Adventures",
+            "Activities":[
+                {
+                    "Label":"Parasailing"
+                },
+                {
+                    "Label":"Paragliding"
+                },
+                {
+                    "Label":"River Rafting"
+                }
+            ]
+        }
+    ]
+}

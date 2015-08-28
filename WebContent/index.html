@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="./icons/vineet.png">
+<title>Vineet Saurabh</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/dashboard.css" rel="stylesheet">
+<link href="css/treeview.css" rel="stylesheet">
+<link href="css/ng-grid.css" rel="stylesheet">
+<link href="css/angular-chart.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/angular-chart.js"></script>
+<script src="js/treeview.js"></script>
+<script src="js/ng-grid-1.3.2.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Travel the World</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Mountain Adventures<span
+								class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Trekking</a></li>
+							<li><a href="#">Rock Climbing</a></li>
+							<li><a href="#">Skiing</a></li>
+						</ul></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-left">
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Water Adventures<span
+								class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Snorkeling</a></li>
+							<li><a href="#">Kayaking</a></li>
+							<li><a href="#">Scuba Diving</a></li>
+							<li><a href="#">Surfing</a></li>
+						</ul></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-left">
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Other Adventures<span
+								class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Parasailing</a></li>
+							<li><a href="#">Paragliding</a></li>
+							<li><a href="#">River Rafting</a></li>
+						</ul></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Vineet Saurabh<span
+								class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">About Me</a></li>
+							<li><a href="#">Contact Me</a></li>
+							<li><a href="#">Travel with Me</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div class="navbar-header2">
+				<div class="navbar-header3">
+					<a class="navbar-brand1" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="row" ng-controller="myController">
+		<div class="col-sm-3 col-md-2 sidebar">
+			<div data-angular-treeview="true" data-tree-model="placeList"
+				data-node-id="id" data-node-label="title" data-node-children="items">
+			</div>
+		</div>
+	</div>
+	<div class="container" ng-controller="myController">
+		<div class="row">
+			<div ng-repeat="link in mainLinks">
+				<div class="col-md-4">
+					<h3 class="text-center">{{link.Label}}</h3>
+					<a ng-href="./pages/{{link.Name}}.html"> <img
+						class="img-circle" ng-src="images/{{link.Name}}.jpg" alt=""
+						width="304" height="236">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

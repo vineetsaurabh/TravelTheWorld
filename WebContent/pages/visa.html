@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Visa</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/dashboard.css" rel="stylesheet">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/angular.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/treeview.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/progressbar.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myController">
+		<div class="container">
+			<div class="page-header">
+				<h2 class="text-center">Visa Requirement For Indian</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-4 well panel panel-default">
+					<h4 class="text-center panel-heading">Visa Free Entry</h4>
+					<div ng-repeat="country in visaFreeCountries">
+						<div class="panel-body">
+							{{ country.Name }} -- {{ country.Period }}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 well panel panel-default">
+					<h4 class="text-center panel-heading">Visa On Arrival</h4>
+					<div ng-repeat="country in visaOnArrivalCountries">
+						<div class="panel-body">
+							{{ country.Name }} -- {{ country.Period }} -- {{ country.Fee }}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 well panel panel-default">
+					<h4 class="text-center panel-heading">Visa Required</h4>
+					<div class="panel-body">
+						<a data-toggle="collapse" href="#collapse1">Schengen Countries</a>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse">
+						<ul class="list-group" ng-repeat="country in schengenCountries">
+							<li class="list-group-item panel-body">{{ country.Name }}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

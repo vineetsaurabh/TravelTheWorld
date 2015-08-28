@@ -1,0 +1,19 @@
+{
+    "visaOnArrivalCountries":[
+        {
+            "Name":"Samoa",
+            "Period":"60 days",
+            "Fee":""
+        },
+        {
+            "Name":"Seychelles",
+            "Period":"1 month",
+            "Fee":""
+        },
+        {
+            "Name":"Cambodia",
+            "Period":"30 days",
+            "Fee":"30 USD"
+        }
+    ]
+}

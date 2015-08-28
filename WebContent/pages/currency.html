@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Currency</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/dashboard.css" rel="stylesheet">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/angular.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/treeview.js"></script>
+<script src="../js/main.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myController"> 
+		<table class="table table-striped table-responsive">
+		    <tr>
+		        <th>Country</th>
+		        <th>Currency</th>
+		        <th>Withdrawl Charge</th>
+		        <th>Maximum Withdrawl Limit</th>
+		    </tr>
+		    <tr ng-repeat="withdrawlCharge in atmWithdrawlCharges">
+		        <td>{{ withdrawlCharge.Country }}</td>
+		        <td>{{ withdrawlCharge.Currency }}</td>
+		        <td>{{ withdrawlCharge.WithdrawlCharge }}</td>
+		        <td>{{ withdrawlCharge.MaximumWithdrawlLimit }}</td>
+		    </tr>
+		</table>
+	</div>
+</body>

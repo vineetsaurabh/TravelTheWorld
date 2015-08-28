@@ -1,0 +1,60 @@
+{
+    "visaFreeCountries":[
+        {
+            "Name":"Mauritius",
+            "Period":"90 days"
+        },
+        {
+            "Name":"Micronesia",
+            "Period":"30 days"
+        },
+        {
+            "Name":"Saint Kitts and Nevis",
+            "Period":"3 months"
+        },
+        {
+            "Name":"Saint Vincent and the Grenadines",
+            "Period":"1 month"
+        },
+        {
+            "Name":"Trinidad and Tobago",
+            "Period":"90 days"
+        },
+        {
+            "Name":"Vanuatu",
+            "Period":"30 days"
+        },
+        {
+            "Name":"Bhutan",
+            "Period":""
+        },
+        {
+            "Name":"Dominica",
+            "Period":"6 months"
+        },
+        {
+            "Name":"Ecuador",
+            "Period":"90 days"
+        },
+        {
+            "Name":"El Salvador",
+            "Period":"90 days"
+        },
+        {
+            "Name":"Fiji",
+            "Period":"4 months"
+        },
+        {
+            "Name":"Grenada",
+            "Period":"6 months"
+        },
+        {
+            "Name":"Haiti",
+            "Period":"3 months"
+        },
+        {
+            "Name":"Jamaica",
+            "Period":""
+        }
+    ]
+}
