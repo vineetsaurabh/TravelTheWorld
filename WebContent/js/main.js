@@ -1,7 +1,7 @@
 (function() {
 
 	// angular module
-	var myApp = angular.module('myApp', [ 'angularTreeview' ]);
+	var myApp = angular.module('myApp', [ 'angularTreeview', 'ui.bootstrap' ]);
 
 	myApp
 			.controller(
@@ -19,62 +19,38 @@
 						});
 
 						$http
-								.get("../data/atmWithdrawlCharges.json")
+								.get("data/atmWithdrawlCharges.json")
 								.success(
 										function(response) {
-											$scope.atmWithdrawlCharges = response.records;
+											$scope.withdrawlCharges = response.charges;
 										});
 
 						$http
-								.get("../data/visaFreeCountries.json")
+								.get("data/visaFreeCountries.json")
 								.success(
 										function(response) {
 											$scope.visaFreeCountries = response.visaFreeCountries;
 										});
 
 						$http
-								.get("../data/visaOnArrivalCountries.json")
+								.get("data/visaOnArrivalCountries.json")
 								.success(
 										function(response) {
 											$scope.visaOnArrivalCountries = response.visaOnArrivalCountries;
 										});
 
 						$http
-								.get("../data/schengenCountries.json")
+								.get("data/schengenCountries.json")
 								.success(
 										function(response) {
 											$scope.schengenCountries = response.schengenCountries;
 										});
 
-						$scope.mainLinks = [ {
-							"Label" : "Ticket Booking",
-							"Name" : "ticketBooking"
-						}, {
-							"Label" : "Hotel Booking",
-							"Name" : "hotelBooking"
-						}, {
-							"Label" : "Visa",
-							"Name" : "visa"
-						}, {
-							"Label" : "Tour Booking",
-							"Name" : "tourBooking"
-						}, {
-							"Label" : "Cloths",
-							"Name" : "cloths"
-						}, {
-							"Label" : "Currency",
-							"Name" : "currency"
-						}, {
-							"Label" : "Restaurant",
-							"Name" : "restaurant"
-						}, {
-							"Label" : "Airport Transfer",
-							"Name" : "airportTransfer"
-						}, {
-							"Label" : "Local Transport",
-							"Name" : "localTransport"
-						}, ];
-
+						$http.get("data/mainLinks.json").success(
+								function(response) {
+									$scope.mainLinks = response.mainLinks;
+								});
+						
 					});
 
 })();

@@ -1,16 +1,16 @@
 {
-    "records":[
+    "charges":[
         {
-            "Country":"Thailand",
-            "Currency":"Thai Bhat",
-            "WithdrawlCharge":"180 THB",
-            "MaximumWithdrawlLimit":"10000 THB"
+            "country":"Thailand",
+            "currency":"Thai Bhat",
+            "withdrawlCharge":"180 THB",
+            "maximumWithdrawlLimit":"10000 THB"
         },
         {
-            "Country":"Cambodia",
-            "Currency":"US Dollar",
-            "WithdrawlCharge":"5 USD",
-            "MaximumWithdrawlLimit":"250 USD"
+            "country":"Cambodia",
+            "currency":"US Dollar",
+            "withdrawlCharge":"5 USD",
+            "maximumWithdrawlLimit":"250 USD"
         }
     ]
 }

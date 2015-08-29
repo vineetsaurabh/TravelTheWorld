@@ -1,40 +1,67 @@
 {
     "mainLinks":[
         {
-            "Label":"Ticket Booking",
-            "Name":"ticketBooking"
+            "id" : 1,
+            "label":"Ticket Booking",
+			"active": false,
+			"template":"ticketBooking.html",
+			"disabled": true
         },
         {
-            "Label":"Hotel Booking",
-            "Name":"hotelBooking"
+            "id" : 2,
+            "label":"Hotel Booking",
+            "active": false,
+            "template":"hotelBooking.html",
+            "disabled": true
         },
         {
-            "Label":"Visa",
-            "Name":"visa"
+            "id" : 3,
+            "label":"Visa",
+            "active": false,
+            "template":"pages/visa.html",
+            "disabled": false
         },
         {
-            "Label":"Tour Booking",
-            "Name":"tourBooking"
+            "id" : 4,
+            "label":"Tour Booking",
+            "active": false,
+            "template":"tourBooking.html",
+            "disabled": true
         },
         {
-            "Label":"Cloths",
-            "Name":"cloths"
+            "id" : 5,
+            "label":"Cloths",
+            "active": false,
+            "template":"cloths.html",
+            "disabled": true
         },
         {
-            "Label":"Currency",
-            "Name":"currency"
+            "id" : 6,
+            "label":"Currency",
+            "active": true,
+            "template":"pages/currency.html",
+            "disabled": false
         },
         {
-            "Label":"Restaurant",
-            "Name":"restaurant"
+            "id" : 7,
+            "label":"Restaurant",
+            "active": false,
+            "template":"restaurant.html",
+            "disabled": true
         },
         {
-            "Label":"Airport Transfer",
-            "Name":"airportTransfer"
+            "id" : 8,
+            "label":"Airport",
+            "active": false,
+            "template":"airport.html",
+            "disabled": true
         },
         {
-            "Label":"Local Transport",
-            "Name":"localTransport"
+            "id" : 9,
+            "label":"Local Transport",
+            "active": false,
+            "template":"localTransport.html",
+            "disabled": true
         }
     ]
 }
